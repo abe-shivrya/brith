@@ -1,0 +1,73 @@
+/* ───── PrintPreview styles ───── */
+
+.print-preview-wrapper {
+  width: 100%;
+}
+
+/* ───── toolbar ───── */
+.preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.preview-heading {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.preview-heading .marathi {
+  font-family: "Noto Serif Devanagari", "Mangal", serif;
+}
+
+/* ───── document area ───── */
+.preview-document {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  background: #e8e8e8;
+  min-height: 80vh;
+}
+
+/* scale document for screen display */
+.preview-document .birth-doc {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  transform-origin: top center;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PRINT STYLES — single source of truth
+   ═══════════════════════════════════════════════════════════ */
+@media print {
+  /* Hide the toolbar */
+  .preview-toolbar {
+    display: none !important;
+  }
+
+  /* Reset wrapper */
+  .print-preview-wrapper {
+    width: auto;
+  }
+
+  /* Remove background/shadow from document container */
+  .preview-document {
+    padding: 0;
+    background: none;
+    min-height: auto;
+    display: block;
+  }
+
+  .preview-document .birth-doc {
+    box-shadow: none;
+    margin: 0;
+    transform: none;
+  }
+}

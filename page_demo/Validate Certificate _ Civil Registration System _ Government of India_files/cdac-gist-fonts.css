@@ -1,0 +1,68 @@
+@font-face
+{
+	font-family:'gist_bengali_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/BNOTDurga_N_Ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/BNOTDurga_N_Ship.ttf')format( 'truetype' );  
+}
+
+@font-face
+{
+	font-family:'gist_gujarati_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/GJOTAvantika_N_Ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/GJOT-Avantika_N_Ship.ttf')format( 'truetype' );  
+}
+
+@font-face
+{
+	font-family:'gist_hindi_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/DVOTYogesh_N_ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/DVOTYogesh_N_ship.ttf')format( 'truetype' );  
+}
+
+@font-face
+{
+	font-family:'gist_malayalam_font';
+	font-style:normal;
+	font-weight:200 !important;
+	src:url('../Fonts/MLOTKarthika_N_Ship.eot?')format('embedded-opentype'),
+	/* IE6-IE8 *//* IE9 */url('../Fonts/MLOTKarthika_N_Ship.ttf')format( 'truetype' );  
+}
+	
+@font-face
+{
+	font-family:'gist_marathi_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/MAROTYogesh_N_ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/MAROTYogesh_N_ship.ttf')format( 'truetype' );  
+}
+
+@font-face
+{
+	font-family:'gist_punjabi_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/PNOTAmar_N_Ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/PNOTAmar_N_Ship.ttf')format( 'truetype' );  
+}
+
+@font-face
+{
+	font-family:'gist_urdu_font';
+	font-style:normal;
+	font-weight:normal;
+	src:url('../Fonts/UROT-Ghalib_N_Ship.eot?')format('embedded-opentype'), 
+	/* IE6-IE8 *//* IE9 */url('../Fonts/UROT-Ghalib_N_Ship.ttf')format( 'truetype' );  
+}
+@font-face {
+    font-family: 'gist_oriya_font';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../Fonts/SAKALBH.eot?') format('embedded-opentype'),url('../Fonts/OROTMukta_N_Ship.ttf') format('truetype')
+}

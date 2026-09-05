@@ -1,0 +1,145 @@
+/**
+ * ValidateCertificateForm.css
+ *
+ * Styles for the certificate data entry form.
+ * Matches the CRS gov.in theme.
+ */
+
+.vc-form {
+  width: 60%;
+  margin: 4% auto 30px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 4px -5px 13px -1px grey;
+}
+
+.vc-form-title {
+  text-align: center;
+  color: #234a7d;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #234a7d;
+}
+
+/* ───── Field layout ───── */
+.vc-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.vc-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 4px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.vc-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.vc-input:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.15);
+}
+
+.vc-input::placeholder {
+  color: #aaa;
+}
+
+.vc-input-mr {
+  background-color: #f5f5f5;
+}
+
+.vc-hint {
+  font-size: 11px;
+  color: #888;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+/* ───── Buttons ───── */
+.vc-form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.vc-btn {
+  padding: 8px 24px;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: box-shadow 0.15s, background 0.15s;
+}
+
+.vc-btn-submit {
+  background: #3f51b5;
+  color: #fff;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.vc-btn-submit:hover {
+  background: #303f9f;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.vc-btn-reset {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #ccc;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vc-btn-reset:hover {
+  background: #f5f5f5;
+}
+
+/* ───── Responsive ───── */
+@media screen and (max-width: 767px) {
+  .vc-form {
+    width: 95%;
+    margin: 16px auto;
+    padding: 16px;
+  }
+
+  .vc-form-title {
+    font-size: 16px;
+  }
+
+  .vc-form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vc-btn {
+    min-width: unset;
+  }
+}

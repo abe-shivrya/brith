@@ -1,0 +1,203 @@
+/**
+ * index.css – Global styles matching the CRS gov.in Angular app.
+ *
+ * Font: Roboto (Google Fonts) – the same as the Angular Material theme.
+ * Material Icons for icon usage.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* ───── reset ───── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ───── App wrapper ───── */
+.content-body {
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.app {
+  padding: 24px 16px;
+  min-height: 100vh;
+}
+
+/* ───── Bootstrap-compatible utilities ───── */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.col-lg-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.flex-grow-1 {
+  flex: 1 1 0%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6;
+}
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.me-1 {
+  margin-right: 0.25rem !important;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* ───── Print base reset ───── */
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .app {
+    padding: 0;
+    min-height: auto;
+  }
+}
+
+/* ───── Hide the Netlify-injected HUD / badge iframes ─────
+ * Netlify injects a script at deploy time that mounts an iframe
+ * (id="nl-badge-frame" for the public badge, id="nl-hud-frame" for
+ * the owner toolbar). The badge content lives in a sandboxed srcdoc
+ * iframe, so parent CSS can't touch it — hide the iframe element
+ * itself instead. */
+#nl-badge-frame,
+#nl-hud-frame {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}

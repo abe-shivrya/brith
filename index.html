@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birth Certificate – Municipal Corporation Solapur</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      Inert placeholders for the Netlify-injected HUD/badge. Netlify's injected
+      script skips mounting if an element with these ids already exists, so the
+      Netlify logo/toolbar never appears on the UI. (CSS in index.css also hides
+      the frames as a fallback.)
+    -->
+    <div id="nl-badge-frame" hidden></div>
+    <div id="nl-hud-frame" hidden></div>
+    <!-- Suppress known React 19 performance tracking error (harmless, happens behind proxies) -->
+    <script>
+      window.addEventListener('error', function(e) {
+        if (e.message && e.message.includes('startTime')) {
+          e.preventDefault();
+          return false;
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

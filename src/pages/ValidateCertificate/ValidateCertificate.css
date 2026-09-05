@@ -1,0 +1,223 @@
+/**
+ * ValidateCertificate.css – Matches the CRS gov.in card+table layout.
+ *
+ * The original uses Bootstrap classes: container, col-md-6, card,
+ * table, table-responsive, table-stripped, table-bordered.
+ */
+
+/* ───── Content section ───── */
+.validate-content {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* min-height: calc(100vh - 200px); */
+}
+
+.validate-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ───── Card ───── */
+.validate-card {
+  width: 60%;
+  margin-top: 4%;
+  padding: 25px;
+  box-shadow: 4px -5px 13px -1px grey;
+  background: #fff;
+  border-radius: 0.25rem;
+}
+
+/* ───── Table (Bootstrap .table .table-responsive .table-stripped .table-bordered) ───── */
+.validate-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.validate-table,
+.validate-table td {
+  border: 1px solid #dee2e6;
+}
+
+/* All rows white */
+.validate-table tbody tr {
+  background-color: #fff;
+}
+
+.validate-td-label {
+  /* font-weight: 700; */
+  /* white-space: nowrap; */
+  padding: 5px;
+  vertical-align: top;
+  width: 150px; 
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.validate-td-value {
+  /* padding: 10px 14px; */
+  padding: 5px 5px;
+
+  vertical-align: top;
+  word-break: break-word;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.validate-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 140px);
+}
+
+.validate-section {
+  margin-bottom: 40px;
+}
+
+.validate-section-title {
+  text-align: center;
+  color: #234a7d;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #234a7d;
+}
+
+.birth-preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.birth-preview-actions {
+  margin-bottom: 20px;
+}
+
+.validate-table-title {
+  text-align: center;
+  color: #234a7d;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #234a7d;
+}
+
+.validate-empty {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* ───── QR Code section ───── */
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 4px -5px 13px -1px grey;
+  max-width: 400px;
+  width: 100%;
+}
+
+.qr-title {
+  color: #234a7d;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.qr-code-box {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qr-url {
+  font-size: 11px;
+  color: #888;
+  word-break: break-all;
+  text-align: center;
+  margin: 12px 0 4px;
+  max-width: 300px;
+}
+
+.qr-id {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 4px 0 0;
+}
+
+/* ───── Verify page record info ───── */
+.verify-record-info {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.verify-record-info p {
+  margin: 2px 0;
+}
+
+/* ───── Save success banner ───── */
+.save-success-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 12px 20px;
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* ───── Responsive ───── */
+@media screen and (max-width: 767px) {
+  .validate-card {
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .validate-td-label {
+    white-space: normal;
+    font-size: 13px;
+  }
+
+  .validate-td-value {
+    font-size: 13px;
+  }
+}

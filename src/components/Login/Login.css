@@ -1,0 +1,106 @@
+/**
+ * Login.css — Login gate for the home page
+ */
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 380px;
+  padding: 36px 32px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: 4px solid #3f51b5;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #234a7d;
+  margin: 0 0 6px;
+  text-align: center;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0 0 28px;
+  text-align: center;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.login-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.login-input {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.login-input:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.15);
+}
+
+.login-error {
+  font-size: 13px;
+  color: #c62828;
+  background: #fdecea;
+  border: 1px solid #f5c6c0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 0 0 18px;
+}
+
+.login-submit {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #7391ba, #234a7d);
+  border: none;
+  border-radius: 4px;
+  padding: 11px 16px;
+  cursor: pointer;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.2s;
+}
+
+.login-submit:hover {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+  .login-card {
+    max-width: 340px;
+    padding: 28px 22px;
+  }
+}

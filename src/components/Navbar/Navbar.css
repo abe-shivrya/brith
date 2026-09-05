@@ -1,0 +1,378 @@
+/* ───── Header top bar ───── */
+.crs-header-top {
+  display: flex;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  align-items: stretch;
+}
+
+.crs-header-content{ 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: stretch;
+  height: fit-content;
+}
+
+/* ───── Left side ───── */
+.crs-header-left {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  padding: 0.2%;
+}
+
+/* ───── Right side ───── */
+.crs-header-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+}
+
+/* ───── Flag img (shared) ───── */
+.crs-flag-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20%;
+  object-fit: cover;
+  object-position: right !important;
+  opacity: 0.66;
+  pointer-events: none;
+}
+
+.crs-header-left img {
+  margin-right: 5%;
+}
+
+/* ───── Content on top of flags ───── */
+.crs-left-content,
+.crs-right-content {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.crs-left-content {
+  justify-content: start;
+}
+
+.crs-right-content {
+  justify-content: flex-end;
+}
+
+/* ───── Center emblem ───── */
+.crs-emblem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.crs-emblem img {
+  display: block;
+}
+
+/* ───── Logos ───── */
+.crs-logo-desktop {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.crs-logo-mobile {
+  display: none;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+}
+
+.crs-spacer {
+  flex: 1 1 auto;
+}
+
+.crs-azadi-logo {
+  max-width: 70px;
+  height: auto;
+}
+
+/* ───── Action buttons ───── */
+.crs-header-actions {
+  display: flex; 
+  padding: 1%;
+  align-items: center;
+  gap: 8px;
+}
+
+.crs-font-buttons {
+  display: flex;
+  gap: 4px;
+  border-right: 1px solid rgba(255,255,255,.4);
+  padding-right: 8px;
+}
+
+.crs-font-btn {
+  background: #fff;
+  color: rgba(0,0,0,.87);
+  border: none;
+  border-radius: 4px;
+  min-width: auto;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  transition: box-shadow .15s;
+}
+
+.crs-font-btn:hover {
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.crs-font-btn .fs-8 { font-size: 11px; }
+
+.crs-font-btn sup {
+  font-size: 8px;
+  position: relative;
+  top: -3px;
+}
+
+.crs-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #234a7d;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.crs-icon-btn:hover { background: rgba(0,0,0,.04); }
+.crs-icon-btn .material-icons { font-size: 22px; }
+
+.crs-login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(90deg,#7391ba,#234a7d);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  min-width: auto;
+  line-height: 28px;
+}
+
+.crs-login-btn:hover {
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.crs-login-btn .material-icons { font-size: 18px; }
+
+.crs-login-text {
+  white-space: nowrap;
+}
+
+/* ───── Hamburger button (hidden on desktop) ───── */
+.crs-hamburger-btn {
+  display: none;
+}
+
+.crs-hamburger-wrapper {
+  position: relative;
+}
+
+/* ───── Navigation bar ───── */
+.crs-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #234a7d;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.crs-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+.crs-nav-btn:hover { background: rgba(255,255,255,.1); }
+.crs-nav-btn .material-icons { font-size: 18px; }
+
+/* ───── Mobile dropdown menu ───── */
+.crs-mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  z-index: 100;
+}
+
+.crs-mobile-menu-item {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+  transition: background .15s;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.crs-mobile-menu-item:hover {
+  background: #f5f5f5;
+}
+
+/* ───── Responsive: tablet ───── */
+@media screen and (max-width: 991px) {
+  .crs-font-buttons { display: none; }
+  .crs-logo-desktop { display: none; }
+  .crs-logo-mobile { display: block; }
+  .crs-nav-btn { padding: 10px 12px; font-size: 13px; }
+}
+
+/* ───── Responsive: mobile ───── */
+@media screen and (max-width: 767px) {
+  .crs-header-top {
+    overflow: visible;
+    flex-wrap: nowrap;
+  }
+
+  .crs-header-content {
+    flex-wrap: nowrap;
+  }
+
+  .crs-header-left {
+    flex-shrink: 0;
+  }
+
+  .crs-logo-mobile { max-width: 120px; }
+  .crs-azadi-logo { max-width: 50px; }
+
+  .crs-emblem {
+    flex-shrink: 0;
+  }
+
+  .crs-emblem img {
+    width: 28px;
+    height: auto;
+  }
+
+  .crs-header-right {
+    flex-shrink: 0;
+  }
+
+  /* Login: icon only, hide text */
+  .crs-login-text { display: none; }
+  .crs-login-btn .material-icons:last-child { display: none; }
+  .crs-login-btn {
+    padding: 6px 10px;
+    border-radius: 50%;
+    min-width: 36px;
+    justify-content: center;
+  }
+
+  /* Dark/light toggle stays visible */
+  .crs-icon-btn { display: flex; }
+
+  /* Show hamburger, match login button theme */
+  .crs-hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #7391ba, #234a7d);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    min-width: 36px;
+    min-height: 36px;
+    cursor: pointer;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    transition: box-shadow .15s;
+  }
+
+  .crs-hamburger-btn:hover {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+  }
+
+  .crs-hamburger-btn .material-icons {
+    font-size: 22px;
+  }
+
+  /* Hide desktop nav bar */
+  .crs-nav-bar { display: none; }
+
+  /* Show mobile dropdown menu */  .crs-mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 9999;
+  }
+}
+
+/* ───── Responsive: small mobile ───── */
+@media screen and (max-width: 576px) {
+  .crs-logo-mobile { 
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .crs-azadi-logo {
+     max-width: 50px;
+   }
+  .crs-header-left img { 
+    margin-right: 4%; 
+  } 
+  .crs-mobile-menu-item {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}

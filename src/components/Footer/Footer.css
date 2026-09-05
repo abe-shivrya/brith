@@ -1,0 +1,234 @@
+/* ───── Footer container ───── */
+.crs-footer {
+  background: radial-gradient(circle, #138f78 0, #234a7d 100%);
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.crs-footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+/* ───── Government logos row ───── */
+.crs-gov-sites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.crs-gov-sites img {
+  max-height: 60px;
+  opacity: 0.85;
+}
+
+.crs-gov-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crs-gov-logo {
+  width: 165px;
+  height: 50px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.crs-gov-logo:hover {
+  opacity: 1;
+}
+
+/* ───── Quick links ───── */
+.crs-quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.crs-quick-links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 22px;
+  position: relative;
+}
+
+.crs-quick-links li::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  right: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.crs-quick-links li:last-child::after {
+  content: "";
+  width: 0;
+  height: 0;
+  background: none;
+}
+
+.crs-quick-links-last {
+  margin-bottom: 16px;
+}
+
+.crs-quick-links a {
+  color: white;
+  cursor: pointer;
+  transition: color 0.15s, text-decoration 0.15s;
+  text-decoration: none;
+}
+
+.crs-quick-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.crs-link-label {
+  color: white;
+  cursor: default;
+}
+
+/* ───── Footer text ───── */
+.crs-footer-updated,
+.crs-footer-dev,
+.crs-footer-ministry {
+  text-align: center;
+  margin: 4px 0;
+  font-size: 14px;
+  color: white;
+}
+
+.crs-footer-updated {
+  margin-bottom: 12px;
+}
+
+/* ───── Copyright bar ───── */
+.crs-copyright-bar {
+  background-color: transparent;
+  padding: 12px 0;
+  margin-top: 16px;
+}
+
+.crs-copyright-text {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crs-copyright-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.crs-time-icon {
+  font-size: 16px !important;
+  vertical-align: middle;
+}
+
+/* ═══════════════════════════════════════════════
+   Responsive — Tablet (≤ 768px)
+   ═══════════════════════════════════════════════ */
+@media screen and (max-width: 768px) {
+  .crs-footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .crs-gov-logo {
+    width: 120px;
+    height: 36px;
+  }
+
+  .crs-quick-links {
+    gap: 4px;
+    font-size: 12px;
+  }
+
+  .crs-quick-links li {
+    margin-right: 14px;
+  }
+
+  .crs-quick-links li::after {
+    height: 14px;
+    right: -8px;
+  }
+
+  .crs-footer-updated,
+  .crs-footer-dev,
+  .crs-footer-ministry {
+    font-size: 12px;
+  }
+
+  .crs-copyright-text {
+    font-size: 12px;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   Responsive — Mobile (≤ 480px)
+   ═══════════════════════════════════════════════ */
+@media screen and (max-width: 480px) {
+  .crs-footer {
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .crs-gov-logo {
+    width: 100px;
+    height: 30px;
+  }
+
+  .crs-quick-links {
+    /* flex-direction: column; */
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .crs-quick-links li {
+    margin-right: 0;
+  }
+
+  .crs-quick-links li::after {
+    /* display: none; */
+  }
+
+  .crs-footer-updated,
+  .crs-footer-dev,
+  .crs-footer-ministry {
+    font-size: 11px;
+    padding: 0 10px;
+  }
+
+  .crs-copyright-text {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}

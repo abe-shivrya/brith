@@ -1,0 +1,107 @@
+/**
+ * ChoosePage.css — Two-button landing page
+ */
+
+.choose-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+}
+
+.choose-title {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #234a7d;
+  margin: 0 0 8px;
+}
+
+.choose-subtitle {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0 0 40px;
+}
+
+.choose-buttons {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.choose-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  padding: 32px 24px;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+.choose-btn:hover {
+  border-color: #3f51b5;
+  box-shadow: 0 6px 20px rgba(63, 81, 181, 0.18);
+  transform: translateY(-2px);
+}
+
+.choose-btn-icon {
+  font-size: 48px;
+  color: #3f51b5;
+}
+
+.choose-btn-label {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.choose-btn-desc {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 1.4;
+}
+
+.choose-btn-birth {
+  border-left: 4px solid #3f51b5;
+}
+
+.choose-btn-validate {
+  border-left: 4px solid #4caf50;
+}
+
+.choose-btn-validate .choose-btn-icon {
+  color: #4caf50;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .choose-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .choose-btn {
+    width: 90%;
+    max-width: 340px;
+    padding: 24px 20px;
+  }
+
+  .choose-title {
+    font-size: 22px;
+  }
+}

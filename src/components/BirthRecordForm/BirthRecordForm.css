@@ -1,0 +1,186 @@
+/* ───── BirthRecordForm styles ───── */
+
+.birth-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 24px;
+  margin: 0 0 8px;
+  color: #1a1a2e;
+  font-weight: 700;
+}
+
+.form-title .marathi {
+  font-family: "Noto Serif Devanagari", "Mangal", serif;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* ───── field grid ───── */
+.form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+@media (max-width: 700px) {
+  .form-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group:nth-child(odd) {
+  /* full-width items get spanned via data */
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.form-label-en {
+  color: #888;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.required-star {
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+/* ───── inputs ───── */
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.15);
+  background: #fff;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.input-error {
+  border-color: #d32f2f !important;
+  background: #fff5f5;
+}
+
+/* Marathi input font */
+.form-input[lang="mr"] {
+  font-family: "Noto Serif Devanagari", "Mangal", serif;
+  font-size: 15px;
+}
+
+.form-error {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: 2px;
+}
+
+.has-error .form-label {
+  color: #d32f2f;
+}
+
+/* ───── error summary ───── */
+.form-error-summary {
+  margin: 16px 0;
+  padding: 12px 16px;
+  background: #fff5f5;
+  border: 1px solid #ffcdd2;
+  border-radius: 6px;
+  color: #d32f2f;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ───── actions ───── */
+.form-actions {
+  margin-top: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: #1565c0;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #0d47a1;
+}
+
+.btn-secondary {
+  background: #f5f5f5;
+  color: #333;
+  border: 1.5px solid #ccc;
+}
+
+.btn-secondary:hover {
+  background: #eee;
+}
+
+/* ───── print: hide form when printing ───── */
+@media print {
+  .birth-form {
+    display: none !important;
+  }
+}
